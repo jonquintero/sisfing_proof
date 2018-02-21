@@ -3,18 +3,13 @@
 namespace Tests\Feature;
 
 use App\User;
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\FeatureTestCase;
 
-class ExampleTest extends TestCase
+
+class ExampleTest extends FeatureTestCase
 {
-    use RefreshDatabase;
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+    /** @test */
+    function test_basic_example()
     {   //$this->withoutExceptionHandling();
         $user = factory(User::class)->create([
             'name' => 'Jonathan Quintero',
