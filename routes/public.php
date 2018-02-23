@@ -19,9 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('dependencies/create', 'CreateDependenciesController@create')
-    ->name('dependencies.create');
-
-Route::post('dependencies/create', 'CreateDependenciesController@store')
-    ->name('dependencies.store');
 

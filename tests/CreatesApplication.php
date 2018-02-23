@@ -37,4 +37,15 @@ trait CreatesApplication
         }
         return $this->defaultUser = factory(User::class)->create();
     }
+
+    public function assertSeeErrors(array $fields)
+    {
+        foreach ($fields as $name => $errors){
+            foreach ((array) $errors as $message){
+                $this->assertSeeIn(
+                    "#field_{$name}.has-error .help-block", $message);
+            }
+
+        }
+    }
 }
