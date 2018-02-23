@@ -11,7 +11,7 @@ class CreateDependenciesTest extends FeatureTestCase
 
     public function test_a_user_create_a_dependency()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
         // Having
         $title = 'Recursos Humanos';
 

@@ -23,5 +23,5 @@ Route::get('dependencies/create', 'CreateDependenciesController@create')
     ->name('dependencies.create');
 
 Route::post('dependencies/create', 'CreateDependenciesController@store')
-    ->name('dependencies.create');
+    ->name('dependencies.store');
 
